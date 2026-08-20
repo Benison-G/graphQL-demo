@@ -8,7 +8,7 @@ export const typeDefs = ` #graphql
     type Book {
         id: ID!,
         title: String!
-        pusblishedYear: Int,
+        publishedYear : Int,
         author: Author
     }
 
