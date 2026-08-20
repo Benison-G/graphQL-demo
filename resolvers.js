@@ -66,5 +66,12 @@ export const resolvers = {
         books: () => {
             return data.books
         }
+    },
+    Mutation: {
+        addBook: (parent, args, context, info) => {
+            const newRecord = {...args, id: data.books.length + 1}
+            data.books.push(newRecord)
+            return newRecord
+        }
     }
 }
